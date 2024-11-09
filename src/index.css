@@ -87,6 +87,11 @@ body:has(.card[data-color="green"]:hover) {
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
+.namelogo {
+  height: 5rem;
+  width: 5rem;
+}
+
 .logo {
   border-radius: 8.889px;
   background: #fff;
