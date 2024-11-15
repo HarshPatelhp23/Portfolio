@@ -37,7 +37,38 @@ const Contact = () => {
           to_email: "harshpatel.backend.dev@gmail.com",
           message: form.message,
         },
-        import.meta.env.VITE_APP_EMAILJS // Correct the public key variable name
+        import.meta.env.VITE_APP_EMAILJS
+      )
+      .then(
+        () => {
+          setLoading(false);
+          showAlert({
+            show: true,
+            text: "Thank you for your message 😃",
+            type: "success",
+          });
+
+          setTimeout(() => {
+            hideAlert(false);
+            setCurrentAnimation("idle");
+            setForm({
+              name: "",
+              email: "",
+              message: "",
+            });
+          }, [3000]);
+        },
+        (error) => {
+          setLoading(false);
+          console.error(error);
+          setCurrentAnimation("idle");
+
+          showAlert({
+            show: true,
+            text: "I didn't receive your message 😢",
+            type: "danger",
+          });
+        }
       );
   
       // Success: Show the success alert and reset form
