@@ -129,6 +129,21 @@ export const experiences = [
       "Participating in code reviews and providing constructive feedback to other developers.",
     ],
   },
+    {
+      title: "Full-Stack Software Developer",
+      company_name: "8-Ease",
+      // icon: atharva,
+      iconBg: "#b7e4c7",
+      date: "August 2024 - Present",
+      points: [
+        "Built and maintained scalable web applications using Ruby on Rails for backend and Vue.js for frontend.",
+        "Designed RESTful APIs and integrated them seamlessly with dynamic frontend components.",
+        "Worked closely with cross-functional teams to define, design, and ship new features that enhanced user experience and application performance.",
+        "Ensured code quality through unit tests, integration tests, and participation in peer code reviews.",
+        "Optimized database queries and improved backend performance for high-load scenarios.",
+        "Implemented responsive UI designs and ensured consistent behavior across modern browsers and devices.",
+      ],
+  },
 ];
 
 export const socialLinks = [
