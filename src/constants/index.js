@@ -1,4 +1,4 @@
-import { atharva, virtueinfo } from "../assets/images";
+import { atharva, corelto, virtueinfo } from "../assets/images";
 import {
   html,
   css,
@@ -131,8 +131,8 @@ export const experiences = [
   },
     {
       title: "Full-Stack Software Developer",
-      company_name: "8-Ease",
-      // icon: atharva,
+      company_name: "Corelto Next Gen PVT-LTD",
+      icon: corelto,
       iconBg: "#b7e4c7",
       date: "August 2024 - Present",
       points: [
